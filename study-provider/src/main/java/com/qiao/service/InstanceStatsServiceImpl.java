@@ -5,6 +5,7 @@ import com.qiao.domain.InstanceStats;
 import java.util.ArrayList;
 import java.util.List;
 
+@com.alibaba.dubbo.config.annotation.Service
 public class InstanceStatsServiceImpl implements InstanceStatsService {
     @Override
     public List<InstanceStats> listAllStatus() {

@@ -9,7 +9,8 @@ import java.util.List;
 
 @Service
 public class ConsumerService {
-    @Autowired
+
+    @Reference
     private InstanceStatsService instanceStatsService;
 
     public List<InstanceStats> listAllStats() {

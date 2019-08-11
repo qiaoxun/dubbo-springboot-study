@@ -9,7 +9,7 @@ import org.springframework.context.annotation.ImportResource;
  * Hello world!
  *
  */
-@ImportResource(locations = "classpath:consumer.xml")
+@EnableDubbo(scanBasePackages = "com.qiao.service")
 @SpringBootApplication
 public class ConsumerApp
 {

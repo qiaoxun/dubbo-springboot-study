@@ -8,7 +8,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * Hello world!
  *
  */
-@EnableDubbo(scanBasePackages = "com.qiao.service")
+@EnableDubbo
 @SpringBootApplication
 public class ProviderApp
 {

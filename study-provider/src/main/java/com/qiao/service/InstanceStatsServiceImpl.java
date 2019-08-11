@@ -1,13 +1,10 @@
 package com.qiao.service;
 
 import com.qiao.domain.InstanceStats;
-import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.List;
 
-@com.alibaba.dubbo.config.annotation.Service
-@Component
 public class InstanceStatsServiceImpl implements InstanceStatsService {
     @Override
     public List<InstanceStats> listAllStatus() {

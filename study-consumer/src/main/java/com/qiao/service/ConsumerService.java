@@ -2,13 +2,14 @@ package com.qiao.service;
 
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.qiao.domain.InstanceStats;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
 public class ConsumerService {
-    @Reference
+    @Autowired
     private InstanceStatsService instanceStatsService;
 
     public List<InstanceStats> listAllStats() {

@@ -8,7 +8,7 @@ import java.util.List;
 @com.alibaba.dubbo.config.annotation.Service
 public class InstanceStatsServiceImpl implements InstanceStatsService {
     @Override
-    public List<InstanceStats> listAllStatus() {
+    public List<InstanceStats> listAllStatus(String ip, String instance) {
         System.out.println("listAllStatus");
         InstanceStats stats0 = new InstanceStats(1, "QX_954", "http://localhost:8080", "Stopped", "Accessible", "127.0.0.1");
         InstanceStats stats1 = new InstanceStats(2, "QX_955", "http://localhost:8082", "Stopped", "Accessible", "127.0.0.1");

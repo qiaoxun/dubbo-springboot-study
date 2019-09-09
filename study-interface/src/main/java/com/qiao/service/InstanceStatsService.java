@@ -5,5 +5,5 @@ import com.qiao.domain.InstanceStats;
 import java.util.List;
 
 public interface InstanceStatsService {
-    public List<InstanceStats> listAllStatus();
+    public List<InstanceStats> listAllStatus(String ip, String instance);
 }
